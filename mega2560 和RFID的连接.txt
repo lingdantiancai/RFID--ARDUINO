@@ -1,0 +1,13 @@
+mega2560            RFID
+53                      SDA
+52			SCK
+51			MOSI
+50			MISO
+
+GND			GND
+3.3			3.3
+5			RST
+
+同时需要在程序上将10改为53
+//D10 - 读卡器CS引脚、D5 - 读卡器RST引脚
+RFID rfid(10,5); 
